@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NaijaWAECNECO | WAEC & NECO Grade Calculator</title>
+  <meta name="description" content="Trusted WAEC & NECO grade calculator for Nigerian students. Instantly calculate total points, averages, and understand what your results mean." />
+  <meta name="keywords" content="WAEC calculator, NECO calculator, Nigerian grades, WAEC points, NECO points" />
+  <meta name="author" content="NaijaWAECNECO" />
+
+  <!-- Favicon (PNG only) -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light-theme">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo-area">
+      <img src="assets/logo.png" alt="NaijaWAECNECO Logo" class="logo" />
+      <span class="brand-name">NaijaWAECNECO</span>
+    </div>
+
+    <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <!-- Ad Space: Top -->
+  <section class="ad ad-top">
+    <span>Advertisement</span>
+  </section>
+
+  <!-- Calculator -->
+  <main class="calculator-container">
+    <h1>WAEC / NECO Grade Calculator</h1>
+    <p class="subtitle">
+      A simple, fast, and reliable way for Nigerian students to understand their results.
+    </p>
+
+    <div class="controls">
+      <label>
+        Exam Type
+        <select id="examType">
+          <option value="waec">WAEC</option>
+          <option value="neco">NECO</option>
+        </select>
+      </label>
+
+      <label>
+        Number of Subjects
+        <select id="subjectCount">
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </label>
+    </div>
+
+    <table class="grades-table">
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody id="subjectsBody"></tbody>
+    </table>
+
+    <div class="actions">
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="results">
+      <div><strong>Total Points:</strong> <span id="totalPoints">0</span></div>
+      <div><strong>Average Score:</strong> <span id="averageScore">0</span></div>
+      <p id="performanceText"></p>
+    </div>
+  </main>
+
+  <!-- Ad Space: Middle -->
+  <section class="ad ad-middle">
+    <span>Advertisement</span>
+  </section>
+
+  <!-- Educational Content -->
+  <section class="content">
+
+    <h2>WAEC vs NECO Grading Explained</h2>
+    <p>
+      Both WAEC and NECO use grades from <strong>A1 (best)</strong> to <strong>F9</strong>.
+      Although the examination bodies are different, the grading scale is the same and
+      widely accepted across Nigeria.
+    </p>
+
+    <h2>What Your Grades Mean</h2>
+    <p>
+      Your grades help institutions assess your academic readiness.
+      Strong results increase your chances for university admission, scholarships,
+      and competitive opportunities.
+    </p>
+
+    <h2>Frequently Asked Questions (FAQ)</h2>
+
+    <p><strong>Is NaijaWAECNECO an official WAEC or NECO website?</strong><br>
+    No. NaijaWAECNECO is an independent educational tool built to help students
+    understand their results more clearly.</p>
+
+    <p><strong>How accurate are the calculations?</strong><br>
+    The calculator uses commonly accepted grade-to-point interpretations.
+    Results are estimates and should be used for guidance only.</p>
+
+    <p><strong>Can I use this for university admission decisions?</strong><br>
+    Always rely on official admission requirements from JAMB and institutions.
+    This tool helps you prepare, not replace official evaluations.</p>
+
+    <p><strong>Does WAEC grading differ from NECO grading?</strong><br>
+    No. Both examinations follow the same A1–F9 grading system,
+    even though the exam structure may differ.</p>
+
+    <p><strong>Is my data stored?</strong><br>
+    No. All calculations happen directly in your browser.
+    No personal data is collected or saved.</p>
+
+    <p><strong>Why am I seeing advertisements?</strong><br>
+    Ads help keep this tool free for Nigerian students and allow continued improvements.</p>
+
+  </section>
+
+  <!-- Ad Space: Bottom -->
+  <section class="ad ad-bottom">
+    <span>Advertisement</span>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2026 NaijaWAECNECO. Built with care for Nigerian students.</p>
+    <p class="disclaimer">
+      This tool is for educational purposes only and is not affiliated with WAEC or NECO.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
